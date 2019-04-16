@@ -5,10 +5,10 @@ module.exports = {
         filename: "bundle.js"
     },
     resolve: {
-      extensions: ['', '.js', '.jsx']
+      extensions: ['.js', '.jsx']
     },
     module: {
-        loaders: [
+        rules: [
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader", query:{presets:['react','es2015']} }
         ]
     }
